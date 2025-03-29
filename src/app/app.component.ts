@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'mi-aplicacion';
+  public name:string ="Samuel";
+  public nameModified:string ="";
+
+  changeName() {
+    this.nameModified = this.name + " Modified"
+  }
 }
